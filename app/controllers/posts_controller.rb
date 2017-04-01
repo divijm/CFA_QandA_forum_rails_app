@@ -9,11 +9,13 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
   end
 
   def new
-    @post = Post.new
+    # @post = Post.new -- Why did he do this?!
+    @post = current_user.posts.build
   end
 
   def create
-    @post = Post.new(post_params)
+    # @post = Post.new(post_params) -- Same situ here brah!
+    @post = current_user.posts.build(post_params)
 
     if @post.save
       redirect_to @post

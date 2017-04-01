@@ -1,8 +1,11 @@
-<h1>All the Posts!</h1>
+<h1>QandA forum</h1>
+
+<%= link_to 'New Post', new_post_path %>
 
 <% @posts.each do |post| %>
 <h2><%= link_to post.title, post%></h2>
 <p>Posted <%= time_ago_in_words (post.created_at) %> ago</p>
+<p>Posted by <%= post.user.email %></p>
 <% end %>
 
 <%= link_to 'New Post', new_post_path %>
