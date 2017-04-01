@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Qanda</title>
+    <title>QandA Forum</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,14 @@
   </head>
 
   <body>
+    <%= render 'layouts/nav' %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+    <div class=body_wrapper>
+      <%= yield %>
+    </div>
   </body>
 </html>
+
+<!-- Why do you have to tell the file here about layouts/nav but under the posts folder you don't?  -->

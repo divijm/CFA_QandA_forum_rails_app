@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+.navbar {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.body_wrapper {
+  width: 60%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
