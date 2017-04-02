@@ -17,14 +17,37 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ @import url('https://fonts.googleapis.com/css?family=Chelsea+Market|Source+Sans+Pro:300,400,700,900');
+
+
+ .big_background {
+    background-image: image-url('pink_dust.png');
+ }
+
 .navbar {
   width: 80%;
   max-width: 1140px;
   margin: 0 auto;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 2em;
+  color: white;
+  background-color: black;
 }
 
 .body_wrapper {
-  width: 60%;
+  width: 70%;
   max-width: 1140px;
   margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  background-image: image-url('old_moon.png');
+  color: black;
+  border-radius: 1em;
+  padding: 2em 5%;
+}
+
+.post_container {
+  margin: 1em 0;
+  padding: 1em 0;
+  border-bottom: 1px solid black;
 }
