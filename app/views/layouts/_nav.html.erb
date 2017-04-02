@@ -2,25 +2,48 @@
 
   <div class="container-fluid">
 
-    <div class="navbar-header navbar-left">
-      <a class="navbar-brand" href="#">QandA</a>
-    </div>
+    <!-- <div class="navbar-header"> -->
+      <!-- <% link_to 'QandA', root_path %>
+      <img src="/assets/images/qanda_logo.png"> -->
+    <!-- <ul class="navbar-left">
+      <li><%= link_to 'QandA', root_path %></li>
+    </ul>
+    </div> -->
 
     <div class="navbar-center">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Create Post</a></li>
-        <li><a href="#">My Posts</a></li>
-        <li><a href="#">My Starred Posts</a></li>
+        <li class="active"><%= link_to 'QandA', root_path %></li>
+        <li><%= link_to 'Create Post', new_post_path %></li>
+        <li><%= link_to 'My Posts', new_post_path %></li>
+        <li><%= link_to 'My Starred Posts', new_post_path %></li>
       </ul>
     </div>
 
     <div class="navbar-right">
-      <ul class="nav navbar-nav">
-        <li>
-          <li><a href="#">My Account</a></li>
-          <button class="btn btn-danger navbar-btn">Login/Logout</button>
+
+      <div id="buttons">
+      <% if user_signed_in? %>
+        <%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => "nav-item is-tab" %>
+      <% else %>
+        <%= link_to "Sign Up", new_user_registration_path %>
+        <%= link_to "Sign In", new_user_session_path %>
+      <% end %>
+    </div>
+
+
+    <!--
+      <ul class="nav navbar-nav"> -->
+        <!-- <li><a href="#">My Account</a></li> -->
+          <!-- <button class="btn btn-danger navbar-btn">Login/Logout</button> -->
+        <!-- <li>
+          <% if user_signed_in? %>
+            <%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => "nav-item is-tab" %>
+            <% else %>
+            <%= link_to 'Sign In', new_user_session_path, :class => "nav-item is-tab"%>
+            <%= link_to 'Register', new_user_registration_path, :class => "nav-item is-tab" %>
+            <% end %>
         </li>
-      </ul>
+      </ul> -->
     </div>
 
   </div>

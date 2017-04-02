@@ -29,7 +29,7 @@
   max-width: 1140px;
   margin: 0 auto;
   font-family: 'Chelsea Market', cursive;
-  font-size: 2em;
+  font-size: 1em;
   color: white;
   background-color: black;
 }
@@ -50,4 +50,25 @@
   margin: 1em 0;
   padding: 1em 0;
   border-bottom: 1px solid black;
+}
+
+.post_content_header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.post_content_paragraph {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.alert {
+    color: white;
+}
+
+.notice {
+    color: white;
 }
