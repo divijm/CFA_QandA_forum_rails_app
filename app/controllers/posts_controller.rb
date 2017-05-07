@@ -6,6 +6,8 @@ before_action :authenticate_user!, except: [:index, :show]
   end
 
   def show
+    @new_comment = @post.comments.build
+    @comments = @post.comments
   end
 
   def new

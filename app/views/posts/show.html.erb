@@ -1,6 +1,19 @@
 <h1 class='post_content_header'><%= @post.title %></h1>
 <p class="post_content_paragraph"><%= @post.content %></p>
 
+<div id="comments">
+  <h2>
+    <%= @post.comments.count %>
+    Comments
+  </h2>
+  <%# @comments.each do |comment| %>
+    <%#= render 'comments/comment', comment: comment %>
+  <%# end %>
+  <h3>Reply to thread</h3>
+  <%= render "/comments/form" %>
+  <%= render @post.comments %>
+</div>
+
 <%= link_to "Edit", edit_post_path(@post) %>
 <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this mate?" } %>
 <%= link_to "Home", root_path %>

@@ -1,24 +1,14 @@
-# README
+# QANDA Forum
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+I was following along a tutorial online on 'How To Build A Forum In Rails' (https://www.youtube.com/watch?v=rTP1eMfI5Bs) by Mackenzie Child!
 
-* Ruby version
+It was really good to do this as I built all the files of the app in a systematic process rather than just using the pre-built scaffold feature in Rails, to allow myself to have a better understanding on the whole MVC structure!
 
-* System dependencies
+The app itself has a few bugs but the learning experience was valuable and will help me very soon as I begin my major project in Rails!
 
-* Configuration
+![Imgur](http://i.imgur.com/02H5Bm0.png)
+![Imgur](http://i.imgur.com/CNliwYO.png)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### That's it for now folks!
